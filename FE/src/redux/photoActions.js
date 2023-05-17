@@ -1,4 +1,5 @@
 import axios from 'axios';
+import instance  from '../../axiosContext';
 
 // Action types
 export const GET_FIRST_PAGE_NEW_CATEGORY_SUCCESS = 'GET_FIRST_PAGE_NEW_CATEGORY_SUCCESS';
@@ -16,8 +17,7 @@ export const LOADING = 'LOADING';
 // Fetches all photos from Pixabay API and returns the total number of photos
 const setAllPhotosFromPixabayToMemory = async function (newCategory) {
     try {
-        const baseUrl = 'http://localhost:8080';
-        const response = await axios.get(`${baseUrl}/photos/getPhotosFromPixabay?category=${newCategory}`);
+        const response = await axios.get(`${instance}/photos/getPhotosFromPixabay?category=${newCategory}`);
         let numOfPhotos = response?.data.totalNumOfPhotos;
         return numOfPhotos;
     }
@@ -30,8 +30,7 @@ const setAllPhotosFromPixabayToMemory = async function (newCategory) {
 // Sorts the list of photos by the given sort type
 const sortListOfPhotosByType = async function (sortBy) {
     try {
-        const baseUrl = 'http://localhost:8080';
-        await axios.get(`${baseUrl}/photos/sortList?sortBy=${sortBy}`);
+        await axios.get(`${instance}/photos/sortList?sortBy=${sortBy}`);
     }
     catch (err) {
         console.log(err.message);
@@ -42,8 +41,7 @@ const sortListOfPhotosByType = async function (sortBy) {
 // Fetches a specific page of photos from memory based on the page number and page size
 const getCurrentPageOfPhotosFromMemory = async function (pageNumber, pageSize) {
     try {
-        const baseUrl = 'http://localhost:8080';
-        const response = await axios.get(`${baseUrl}/photos/getPageFromMemory?pageNumber=${pageNumber}&pageSize=${pageSize}`);
+        const response = await axios.get(`${instance}/photos/getPageFromMemory?pageNumber=${pageNumber}&pageSize=${pageSize}`);
         const paginatedList = response?.data.paginated;
         return paginatedList;
     } catch (err) {
