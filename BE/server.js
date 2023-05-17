@@ -6,8 +6,15 @@ const cors = require('cors');
 const app = express();
 
 app.use(express.json());
-app.use(cors({ origin: 'http://localhost:3000' }));
+
+const getServerUrl = () => {
+    if (process.env.NODE_ENV === 'production') return 'https://galleryapp-67bo.onrender.com'
+    return "http://localhost:3000";
+}
+  
+app.use(cors({ origin: getServerUrl() }));
 app.use('/photos', photosRoute);
+
 
 
 app.use((req, res) => {
