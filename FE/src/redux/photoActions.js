@@ -1,4 +1,4 @@
-import instance from '../axiosContext';
+import instance from './axiosContext';
 
 // Action types
 export const GET_FIRST_PAGE_NEW_CATEGORY_SUCCESS = 'GET_FIRST_PAGE_NEW_CATEGORY_SUCCESS';
