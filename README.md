@@ -16,15 +16,13 @@
  It only returns the total number of photos .
  Contiousley (very important - otherwise, the cache gets depleted), 
  It sorts the photos in the cache based on the new sort type, which is by default 'id' .
- Eventually, it assigns into an array the first page of photos (starting over), of the given page size,
- Which is by default 9 .
+ Eventually, it assigns into an array the first page of photos (starting over), of the given page size .
 
  2 # GetFirstPageNewSort (newSortType, pageSize)
 
  This function takes a newSortType and a pageSize .
  It sorts the photos in the cache based on the new sort type, which is by default 'id' .
- Eventually, it assigns into an array the first page of photos (starting over), of the given page size,
- Which is by default 9 .
+ Eventually, it assigns into an array the first page of photos (starting over), of the given page size .
 
  3 # GetPage (newPageNumber, pageSize)
  
