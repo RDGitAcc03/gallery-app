@@ -8,6 +8,9 @@ function getServerUrl() {
   
   const instance = axios.create({
     baseURL: getServerUrl(),
+    headers: {
+      'Content-Type': 'application/javascript',
+    }
     // timeout: 1000,
   });
   

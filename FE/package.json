@@ -1,7 +1,6 @@
 {
   "name": "gallery-app",
   "private": true,
-  "homepage": "/FE",
   "dependencies": {
     "@chakra-ui/react": "^2.6.1",
     "@emotion/react": "^11.11.0",
