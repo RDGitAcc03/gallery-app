@@ -1,0 +1,14 @@
+img.photo {
+    /* border: 1px solid; */
+    display: inline-block;
+    width: 170px !important;
+    height: 170px !important;
+    padding: 0.5rem;
+    border-radius: 4px;
+    transition: -webkit-transform 700ms ease;
+    height: auto;
+}
+
+img.photo:hover {
+    transform: scale(1.05);
+}

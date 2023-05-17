@@ -1,0 +1,25 @@
+
+
+
+
+#modalBody {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding-bottom: 1rem;
+}
+
+div#modalContent {
+    display: flex;
+    justify-content: space-around;
+}
+
+div#modalContent>img {
+    width: 110px;
+    height: 110px;
+    align-self: center;
+}
+
+div#modalContent span {
+    font-weight: 600;
+}

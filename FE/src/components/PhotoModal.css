@@ -1,0 +1,23 @@
+div#modalContent {
+    display: flex;
+}
+
+div.details {
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+div.numbers {
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+img#image {
+    height: 130px ;
+    width: 180px;
+}
