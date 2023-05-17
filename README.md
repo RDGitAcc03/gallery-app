@@ -5,7 +5,7 @@
 
 
 
- 3 Functions that i built in the redux (action creators) :
+ 3 main functions that i built in the redux (action creators) :
 
 
  1 # GetFirstPageNewCatagory (newCatagory, newSortType, pageSize)
