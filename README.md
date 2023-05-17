@@ -35,7 +35,7 @@
 
 Notes:
 - The design is responsive
-- You can eighter type a category, click on it or move with keyboard keys.
+- You can either type a category, click on it or move with keyboard keys.
 
 Stack:
 - FE: React.js, Redux
