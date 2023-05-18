@@ -8,7 +8,7 @@ let retryAfter;
 async function getPhotosFromPixabay(req, res) {
     try {
         const { category } = req.query;
-        const api = `https://pixabay.com/api/?key=25540812-faf2b76d586c1787d2dd02736&q=${category}&per_page=50`
+        const api = `https://pixabay.com/api/?key=${process.env.API_KEY || '25540812-faf2b76d586c1787d2dd02736'}&q=${category}&per_page=50`
         const response = await axios.get(api);
         const photosResponse = response.data.hits;
         let totalNumOfPhotos = response.data.totalHits;
