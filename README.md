@@ -1,8 +1,9 @@
 # Store-app is a gallery project.
 
+https://galleryapp-67bo.onrender.com/
+
 #### Cd fe/ and then run 'npm start'  ####
 #### Cd be/ and then run 'node index.js' ####
-
 
 
  3 main functions that i built in the redux (action creators) :
