@@ -74,7 +74,9 @@ const photoReducer = (state = initialState, action) => {
                 isNextButtonDisabled: action.payload.currentPageNumber >= totalPages,
                 error: ''
             }
-        case GET_FIRST_PAGE_NEW_CATEGORY_FAILURE, GET_FIRST_PAGE_NEW_SORT_FAILURE, GET_PAGE_FAILURE:
+        case GET_FIRST_PAGE_NEW_CATEGORY_FAILURE:
+        case GET_FIRST_PAGE_NEW_SORT_FAILURE:
+        case GET_PAGE_FAILURE:
             // Update state in case of failure
             return {
                 ...state,

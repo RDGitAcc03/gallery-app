@@ -74,8 +74,10 @@ export const GetFirstPageNewCatagory = (newCatagory, newSortType, pageSize) => {
                 payload: {
                     currentError: err.message
                 }
-            })
-            throw new Error(err);
+            });
+            // Create a custom error object
+            const customError = new Error(err.message);
+            customError.status = 200; // Set the status code to 200 to use custome error modal
         }
     }
 }
@@ -101,8 +103,10 @@ export const GetFirstPageNewSort = (newSortType, pageSize) => {
                 payload: {
                     currentError: err.message
                 }
-            })
-            throw new Error(err);
+            });
+            // Create a custom error object
+            const customError = new Error(err.message);
+            customError.status = 200; // Set the status code to 200 to use custome error modal
         }
     }
 }
@@ -126,8 +130,10 @@ export const GetPage = (newPageNumber, pageSize) => {
                 payload: {
                     currentError: err.message
                 }
-            })
-            throw new Error(err);
+            });
+            // Create a custom error object
+            const customError = new Error(err.message);
+            customError.status = 200; // Set the status code to 200 to use custome error modal
         }
     }
 }

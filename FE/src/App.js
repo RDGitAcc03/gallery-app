@@ -7,7 +7,7 @@ import { css } from '@emotion/react';
 import TypeSelectionModal from './components/TypeSelectionModal';
 import PaginatedList from './components/PaginatedList';
 import SpinnerLoader from './components/SpinnerLoader';
-import AlertModal from './components/AlertModal';
+import ErrorBoundary from './components/ErrorBoundary';
 
 
 function App(props) {
@@ -41,12 +41,6 @@ function App(props) {
     GetFirstPageNewCatagory(currentCategory, currentSortType, currentPageSize)
   }, []);
 
-  useEffect(() => {
-    if (currentError) {
-      console.log("current error: ", currentError);
-    };
-  }, [currentError])
-
   // Event handlers
   const handlePrev = () => {
     GetPage(currentPageNumber - 1, currentPageSize)
@@ -68,10 +62,6 @@ function App(props) {
     setModalContent(photo);
   }
 
-  const onCloseErrorModal = () => {
-    return currentError === '';
-  }
-
   const disabledStyles = css`
   &:hover {
     background-color: rgb(250, 250, 255) !important;
@@ -81,8 +71,7 @@ function App(props) {
 `;
 
   return (
-    <>
-      <AlertModal show={currentError !== ''} onClose={onCloseErrorModal} alertMessage={currentError} />
+    <ErrorBoundary currentError={currentError}>
       <div style={{
         display: "flex",
         flexDirection: "column",
@@ -134,7 +123,7 @@ function App(props) {
           GetFirstPageNewCatagory={GetFirstPageNewCatagory}
         />
       </div>
-    </>
+    </ErrorBoundary>
   );
 }
 
