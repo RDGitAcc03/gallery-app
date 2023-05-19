@@ -27,7 +27,10 @@ div#buttons button {
   font-size: 1.5vw;
 }
 
-@media (width <= 229px ) {
+@media (0<= width <= 229px ) {
+  div#photoScreen {
+    overflow: scroll;
+  }
   div#buttons button {
     font-size: 9.5px !important;
     width: 100vw;
@@ -35,20 +38,22 @@ div#buttons button {
 }
 
 
-  /* @media (230px<= width <=339px) {
+  @media (230px<= width <=339px) {
     div#photosScreen {
-      width: 100vw;
+      width: 90vw;
       padding: 0.5rem 0;
+    overflow: scroll;
     }
     div#buttons {
       width: 100vw;
     }
-  } */
+  }
 
 @media (340px<= width <=355px) {
   div#photosScreen {
     width: 100vw;
     padding: 0.5rem 0;
+    overflow: scroll;
   }
   div#buttons {
     width: 100vw;
@@ -58,6 +63,7 @@ div#buttons button {
 @media (356px<= width <=370px) {
   div#photosScreen {
     width: 100vw;
+    overflow: scroll;
   }
   div#buttons {
     width: 100vw;
@@ -67,6 +73,7 @@ div#buttons button {
 @media (371px<= width <=386px) {
   div#photosScreen {
     width: 96vw;
+    overflow: scroll;
   }
   div#buttons {
     width: 100vw;
@@ -76,6 +83,7 @@ div#buttons button {
 @media (387px<= width <=400px) {
   div#photosScreen {
     width: 94vw;
+    overflow: scroll;
   }
   div#buttons {
     width: 100vw;
@@ -85,6 +93,7 @@ div#buttons button {
 @media (401px<= width <=415px) {
   div#photosScreen {
     width: 92vw;
+    overflow: scroll;
   }
   div#buttons {
     width: 100vw;
@@ -94,6 +103,7 @@ div#buttons button {
 @media (416px<= width <=430px) {
   div#photosScreen {
     width: 90vw;
+    overflow: scroll;
   }
   div#buttons {
     width: 100vw;
@@ -103,6 +113,7 @@ div#buttons button {
 @media (431px<= width <=439px) {
   div#photosScreen {
     width: 89vw;
+    overflow: scroll;
   }
   div#buttons {
     width: 90vw;
@@ -112,6 +123,7 @@ div#buttons button {
 @media (440px<= width <=459px) {
   div#photosScreen {
     width: 84vw;
+    overflow: scroll;
   }
   div#buttons {
     width: 85vw;
@@ -121,6 +133,7 @@ div#buttons button {
 @media (460px<= width <=474px) {             
   div#photosScreen {
     width: 79vw;
+    overflow: scroll;
   }
   div#buttons {
     width: 80vw;
@@ -130,6 +143,7 @@ div#buttons button {
 @media (475px<= width <=490px) {             
   div#photosScreen {
     width: 77vw;
+    overflow: scroll;
   }
   div#buttons {
     width: 80vw;
@@ -139,6 +153,7 @@ div#buttons button {
 @media (491px<= width <=505px) {             
   div#photosScreen {
     width: 77vw;
+    overflow: scroll;
   }
   div#buttons {
     width: 80vw;
@@ -148,6 +163,7 @@ div#buttons button {
 @media (506px<= width <=517px) {             
   div#photosScreen {
     width: 76vw;
+    overflow: scroll;
   }
   div#buttons {
     width: 80vw;
@@ -157,6 +173,7 @@ div#buttons button {
 @media (518px<= width <=525px) {             
   div#photosScreen {
     width: 75vw;
+    overflow: scroll;
   }
   div#buttons {
     width: 80vw;
@@ -166,6 +183,7 @@ div#buttons button {
 @media (526px<= width <=531px) {
   div#photosScreen {
     width: 100vw;
+    overflow: hidden;
   }
   div#buttons {
     width: 80vw;
@@ -607,6 +625,7 @@ div#buttons button {
 @media (1501px <= width) {
   div#photosScreen {
     width: 37vw;
+    overflow: hidden;
   }
   div#buttons {
     width: 40vw;
