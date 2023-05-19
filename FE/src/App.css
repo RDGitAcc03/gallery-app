@@ -5,7 +5,7 @@ div#photosScreen {
   align-items: center;
   flex-wrap: wrap;
   height: 83vh;
-  width: 40vw;
+  width: 100vw;
   margin: 0 auto;
   overflow: hidden;
   /* border: 1px solid; */
@@ -13,22 +13,613 @@ div#photosScreen {
   box-shadow: 0px 4px 6px 10px rgba(0, 0, 0, 0.29);
 }
 
-@media (width <=1314px) {
-  div#photosScreen {
-    overflow: scroll;
-  }
-
+div#buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 100vw;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+  /* border: 1px solid; */
 }
 
 div#buttons button {
   font-size: 1.5vw;
 }
 
-@media (width <=900px) {
+@media (width <= 229px ) {
+  div#buttons button {
+    font-size: 9.5px !important;
+    width: 100vw;
+  }
+}
+
+
+  /* @media (230px<= width <=339px) {
+    div#photosScreen {
+      width: 100vw;
+      padding: 0.5rem 0;
+    }
+    div#buttons {
+      width: 100vw;
+    }
+  } */
+
+@media (340px<= width <=355px) {
+  div#photosScreen {
+    width: 100vw;
+    padding: 0.5rem 0;
+  }
+  div#buttons {
+    width: 100vw;
+  }
+}
+
+@media (356px<= width <=370px) {
+  div#photosScreen {
+    width: 100vw;
+  }
+  div#buttons {
+    width: 100vw;
+  }
+}
+
+@media (371px<= width <=386px) {
+  div#photosScreen {
+    width: 96vw;
+  }
+  div#buttons {
+    width: 100vw;
+  }
+}
+
+@media (387px<= width <=400px) {
+  div#photosScreen {
+    width: 94vw;
+  }
+  div#buttons {
+    width: 100vw;
+  }
+}
+
+@media (401px<= width <=415px) {
+  div#photosScreen {
+    width: 92vw;
+  }
+  div#buttons {
+    width: 100vw;
+  }
+}
+
+@media (416px<= width <=430px) {
+  div#photosScreen {
+    width: 90vw;
+  }
+  div#buttons {
+    width: 100vw;
+  }
+}
+
+@media (431px<= width <=439px) {
+  div#photosScreen {
+    width: 89vw;
+  }
+  div#buttons {
+    width: 90vw;
+  }
+}
+
+@media (440px<= width <=459px) {
+  div#photosScreen {
+    width: 84vw;
+  }
+  div#buttons {
+    width: 85vw;
+  }
+}
+
+@media (460px<= width <=474px) {             
+  div#photosScreen {
+    width: 79vw;
+  }
+  div#buttons {
+    width: 80vw;
+  }
+}
+
+@media (475px<= width <=490px) {             
+  div#photosScreen {
+    width: 77vw;
+  }
+  div#buttons {
+    width: 80vw;
+  }
+}
+
+@media (491px<= width <=505px) {             
+  div#photosScreen {
+    width: 77vw;
+  }
+  div#buttons {
+    width: 80vw;
+  }
+}
+
+@media (506px<= width <=517px) {             
+  div#photosScreen {
+    width: 76vw;
+  }
+  div#buttons {
+    width: 80vw;
+  }
+}
+
+@media (518px<= width <=525px) {             
+  div#photosScreen {
+    width: 75vw;
+  }
+  div#buttons {
+    width: 80vw;
+  }
+}
+
+@media (526px<= width <=531px) {
+  div#photosScreen {
+    width: 100vw;
+  }
+  div#buttons {
+    width: 80vw;
+  }
+}
+
+@media (532px<= width <=536px) {
+  div#photosScreen {
+    width: 99vw;
+  }
+  div#buttons {
+    width: 80vw;
+  }
+}
+
+@media (537px<= width <=542px) {
+  div#photosScreen {
+    width: 98vw;
+  }
+  div#buttons {
+    width: 80vw;
+  }
+}
+
+@media (543px<= width <=547px) {
+  div#photosScreen {
+    width: 97vw;
+  }
+  div#buttons {
+    width: 80vw;
+  }
+}
+
+@media (548px<= width <=553px) {
+  div#photosScreen {
+    width: 96vw;
+  }
+  div#buttons {
+    width: 80vw;
+  }
+}
+
+@media (554px<= width <=559px) {
+  div#photosScreen {
+    width: 95vw;
+  }
+  div#buttons {
+    width: 80vw;
+  }
+}
+
+@media (560px<= width <=565px) {
+  div#photosScreen {
+    width: 94vw;
+  }
+  div#buttons {
+    width: 80vw;
+  }
+}
+
+@media (566px<= width <=571px) {
+  div#photosScreen {
+    width: 93vw;
+  }
+  div#buttons {
+    width: 80vw;
+  }
+}
+
+@media (572px<= width <=578px) {
+  div#photosScreen {
+    width: 92vw;
+  }
+  div#buttons {
+    width: 80vw;
+  }
+}
+
+@media (579px<= width <=584px) {
+  div#photosScreen {
+    width: 91vw;
+  }
+  div#buttons {
+    width: 80vw;
+  }
+}
+
+@media (585px<= width <=591px) {
+  div#photosScreen {
+    width: 90vw;
+  }
+  div#buttons {
+    width: 80vw;
+  }
+}
+
+@media (592px<= width <=597px) {
+  div#photosScreen {
+    width: 89vw;
+  }
+  div#buttons {
+    width: 80vw;
+  }
+}
+
+@media (598px<= width <=604px) {
+  div#photosScreen {
+    width: 88vw;
+  }
+  div#buttons {
+    width: 80vw;
+  }
+}
+
+@media (605px<= width <=611px) {
+  div#photosScreen {
+    width: 87vw;
+  }
+  div#buttons {
+    width: 80vw;
+  }
+}
+
+@media (612px<= width <=618px) {
+  div#photosScreen {
+    width: 86vw;
+  }
+  div#buttons {
+    width: 80vw;
+  }
+}
+
+@media (619px<= width <=626px) {
+  div#photosScreen {
+    width: 85vw;
+  }
+  div#buttons {
+    width: 80vw;
+  }
+}
+
+@media (627px<= width <=641px) {
+  div#photosScreen {
+    width: 85vw;
+  }
+  div#buttons {
+    width: 80vw;
+  }
+}
+
+@media (642px<= width <=657px) {
+  div#photosScreen {
+    width: 82vw;
+  }
+  div#buttons {
+    width: 80vw;
+  }
+}
+
+@media (658px<= width <=672px) {
+  div#photosScreen {
+    width: 80vw;
+  }
+  div#buttons {
+    width: 80vw;
+  }
+}
+
+@media (673px<= width <=695px) {
+  div#photosScreen {
+    width: 79vw;
+  }
+  div#buttons {
+    width: 80vw;
+  }
+}
+
+@media (696px <= width <= 720px) {
+  div#photosScreen {
+    width: 78vw;
+  }
+  div#buttons {
+    width: 80vw;
+  }
+}
+
+@media (721px <= width <= 740px) {
+  div#photosScreen {
+    width: 77vw;
+  }
+  div#buttons {
+    width: 80vw;
+  }
+}
+
+@media (741px <= width <= 760px) {
+  div#photosScreen {
+    width: 76vw;
+  }
+  div#buttons {
+    width: 80vw;
+  }
+}
+
+@media (761px <= width <= 770px) {
+  div#photosScreen {
+    width: 75vw;
+  }
+  div#buttons {
+    width: 80vw;
+  }
+}
+
+@media (771px <= width <= 780px) {
+  div#photosScreen {
+    width: 74vw;
+  }
+  div#buttons {
+    width: 80vw;
+  }
+}
+
+@media (781px <= width <= 800px) {
+  div#photosScreen {
+    width: 71vw;
+  }
+  div#buttons {
+    width: 77vw;
+  }
+}
+
+@media (801px <= width <= 840px) {
+  div#photosScreen {
+    width: 67vw;
+  }
+  div#buttons {
+    width: 74vw;
+  }
+}
+
+@media (841px <= width <= 860px) {
+  div#photosScreen {
+    width: 63vw;
+  }
+  div#buttons {
+    width: 72vw;
+  }
+}
+
+@media (861px <= width <= 880px) {
+  div#photosScreen {
+    width: 63vw;
+  }
+  div#buttons {
+    width: 70vw;
+  }
+}
+
+@media (881px <= width <= 900px) {
+  div#photosScreen {
+    width: 62vw;
+  }
+  div#buttons {
+    width: 68vw;
+  }
+}
+
+@media (901px <= width <= 920px) {
+  div#photosScreen {
+    width: 62vw;
+  }
+  div#buttons {
+    width: 66vw;
+  }
+}
+
+@media (921px <= width <= 940px) {
+  div#photosScreen {
+    width: 61vw;
+  }
+  div#buttons {
+    width: 64vw;
+  }
+}
+
+@media (941px <= width <= 960px) {
+  div#photosScreen {
+    width: 60vw;
+  }
+  div#buttons {
+    width: 62vw;
+  }
+}
+
+@media (961px <= width <= 980px) {
+  div#photosScreen {
+    width: 59vw;
+  }
+  div#buttons {
+    width: 60vw;
+  }
+}
+
+@media (981px <= width <= 1000px) {
+  div#photosScreen {
+    width: 58vw;
+  }
+  div#buttons {
+    width: 58vw;
+  }
+}
+
+@media (1001px <= width <= 1020px) {
+  div#photosScreen {
+    width: 56vw;
+  }
+  div#buttons {
+    width: 56vw;
+  }
+}
+
+@media (1021px <= width <= 1040px) {
+  div#photosScreen {
+    width: 54vw;
+  }
+  div#buttons {
+    width: 54vw;
+  }
+}
+
+@media (1041px <= width <= 1060px) {
+  div#photosScreen {
+    width: 52vw;
+  }
+  div#buttons {
+    width: 52vw;
+  }
+}
+
+@media (1061px <= width <= 1100px) {
+  div#photosScreen {
+    width: 51vw;
+  }
+  div#buttons {
+    width: 51vw;
+  }
+}
+
+@media (1101px <= width <= 1140px) {
+  div#photosScreen {
+    width: 49vw;
+  }
+  div#buttons {
+    width: 51vw;
+  }
+}
+
+@media (1141px <= width <= 1180px) {
+  div#photosScreen {
+    width: 47vw;
+  }
+  div#buttons {
+    width: 50vw;
+  }
+}
+
+@media (1181px <= width <= 1220px) {
+  div#photosScreen {
+    width: 46vw;
+  }
+  div#buttons {
+    width: 48vw;
+  }
+}
+
+@media (1221px <= width <= 1260px) {
+  div#photosScreen {
+    width: 44vw;
+  }
+  div#buttons {
+    width: 46vw;
+  }
+}
+
+@media (1261px <= width <= 1300px) {
+  div#photosScreen {
+    width: 42vw;
+  }
+  div#buttons {
+    width: 44vw;
+  }
+}
+
+@media (1301px <= width <= 1340px) {
+  div#photosScreen {
+    width: 41vw;
+  }
+  div#buttons {
+    width: 43vw;
+  }
+}
+
+@media (1341px <= width <= 1380px) {
+  div#photosScreen {
+    width: 40vw;
+  }
+  div#buttons {
+    width: 42vw;
+  }
+}
+
+@media (1381px <= width <= 1420px) {
+  div#photosScreen {
+    width: 40vw;
+  }
+  div#buttons {
+    width: 42vw;
+  }
+}
+
+@media (1421px <= width <= 1460px) {
+  div#photosScreen {
+    width: 38vw;
+  }
+  div#buttons {
+    width: 41vw;
+  }
+}
+
+@media (1461px <= width <= 1500px) {
+  div#photosScreen {
+    width: 37vw;
+  }
+  div#buttons {
+    width: 40vw;
+  }
+}
+
+@media (1501px <= width) {
+  div#photosScreen {
+    width: 37vw;
+  }
+  div#buttons {
+    width: 40vw;
+  }
+}
+
+
+@media (220px <= width <=900px) {
   div#buttons button {
     font-size: 13.5px;
   }
 }
+
 @media (width >= 1120px) {
   div#buttons button {
     font-size: 18px;
@@ -36,15 +627,6 @@ div#buttons button {
 }
 
 
-div#buttons {
-  display: flex;
-  justify-content: space-around;
-  margin: 0 auto;
-  width: 40vw;
-  margin-bottom: 0.5rem;
-  padding: 1rem;
-  /* border: 1px solid; */
-}
 
 div#buttons button:first-child {
   color: rgb(25, 168, 12);

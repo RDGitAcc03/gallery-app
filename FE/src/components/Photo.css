@@ -12,3 +12,43 @@ img.photo {
 img.photo:hover {
     transform: scale(1.05);
 }
+
+div.photoContainer {
+    display: flex;
+    justify-content: center;
+}
+
+@media (219px<= width) {
+    img.photo {
+        width: 98% !important;
+        height: 240px !important;
+    }
+}
+
+@media (220px<= width <=316px) {
+    img.photo {
+        width: 98% !important;
+        height: 240px !important;
+    }
+}
+
+@media (317px<= width <= 325px) {
+    img.photo {
+        width: 300px !important;
+        height: 200px !important;
+    }
+}
+
+@media (326px<= width <= 339px) {
+    img.photo {
+        width: 300px !important;
+        height: 200px !important;
+    }
+} 
+
+@media (340px<= width) {
+    img.photo {
+        width: 170px !important;
+        height: 170px !important;
+    }
+}

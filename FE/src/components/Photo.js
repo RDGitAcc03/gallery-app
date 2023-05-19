@@ -5,7 +5,7 @@ function Photo({ photo, onClick }) {
 
     const { webformatURL, tags } = photo;
     return (
-        <div onClick={onClick}>
+        <div className='photoContainer' onClick={onClick}>
             <img
                 className="photo"
                 src={webformatURL}

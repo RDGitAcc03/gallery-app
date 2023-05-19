@@ -76,7 +76,7 @@ function App(props) {
         display: "flex",
         flexDirection: "column",
         margin: "1% auto",
-        width: '45%'
+        // width: '45%'
       }}>
         <div id='buttons'>
           <Button
